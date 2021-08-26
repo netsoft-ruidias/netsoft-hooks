@@ -4,7 +4,7 @@ Better description coming soon... stay tuned
 
 # ISC Licence
 
-Copyright (c) 2010-2021, NetsoftU+00AE (Portugal) mail@netsoft.pt
+Copyright (c) 2010-2021, Netsoft® (Portugal) mail@netsoft.pt
 
 Permission to use, copy, modify, and distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
