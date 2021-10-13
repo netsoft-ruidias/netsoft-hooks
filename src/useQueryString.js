@@ -2,6 +2,12 @@ import { useMemo } from "react";
 import { useParams, useLocation } from "react-router-dom";
 import queryString from "query-string";
 
+/**
+ * Convert the queryString into a key/value object that you can use in your component.
+ * @example
+ *      const [params, location] = useQueryString();
+
+ */
 const useQueryString = () => {
     const params = useParams();
     const location = useLocation();

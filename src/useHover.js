@@ -1,5 +1,11 @@
 import { useState, useRef, useEffect } from "react";
 
+/**
+ * Fires an event when the component is hovered.
+ * @example
+ *      const [hoverRef, isHovered] = useHover();
+ *      return <div ref={hoverRef}>{isHovered ? "😁" : "☹️"}</div>;
+ */
 function useHover() {
     const [value, setValue] = useState(false);
 
@@ -25,9 +31,5 @@ function useHover() {
 
     return [ref, value];
 }
-
-// Usage
-// const [hoverRef, isHovered] = useHover();
-// return <div ref={hoverRef}>{isHovered ? "😁" : "☹️"}</div>;
 
 export { useHover };

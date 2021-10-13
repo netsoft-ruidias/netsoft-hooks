@@ -1,5 +1,13 @@
 import { useState, useCallback } from "react";
 
+/**
+ * Returns a stateful array, and functions to handle the array.
+ * @example
+ *      const todos = useArray(["foo", "bar"])
+ *      todos.add("baz") * @param {array} initial the initial array state
+ * @returns {array} the array state
+ * @returns {function} { state, add(), 'clear(), removeIndex(), removeById() }
+ */
 const useArray = (initial) => {
     const [value, setValue] = useState(initial);
 
@@ -30,9 +38,5 @@ const useArray = (initial) => {
         removeById: useCallback(handleRemoveById, []),
     };
 };
-
-// usage:
-// const todos = useArray(["foo", "bar"])
-// todos.add("baz")
 
 export { useArray };

@@ -1,5 +1,13 @@
 import { useCallback, useState } from "react";
 
+/**
+ * Returns a stateful boolean, and a function to toggle it.
+ * @example
+ *      const [ isLoading, toggleLoading ] = useToggle();
+ *      toggleLoading()
+ * @returns {boolean} the toggle state
+ * @returns {function} the toggle function
+ */
 const useToggle = (initialState = false) => {
     const [state, setState] = useState(initialState);
 
@@ -9,9 +17,5 @@ const useToggle = (initialState = false) => {
 
     return [state, toggle];
 };
-
-// usage:
-// Call the hook which returns, current value and the toggler function
-// const [isLoading, toggleLoading] = useToggle();
 
 export { useToggle };

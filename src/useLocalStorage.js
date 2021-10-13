@@ -1,5 +1,14 @@
 import { useState } from "react";
 
+/**
+ * Returns a stateful value (is persisted in the localStorage), and a function to update it.
+ * @example
+ *      // Similar to useState but first arg is key to the value in local storage.
+ *      const [name, setName] = useLocalStorage("name", "Bob");
+ *      setName("Peter")
+ * @returns {object} the object state
+ * @returns {function} the object setter function
+ */
 const useLocalStorage = (key, initialValue) => {
     // State to store our value
     // Pass initial state function to useState so logic is only executed once
@@ -34,9 +43,5 @@ const useLocalStorage = (key, initialValue) => {
     };
     return [storedValue, setValue];
 };
-
-// usage:
-// Similar to useState but first arg is key to the value in local storage.
-// const [name, setName] = useLocalStorage("name", "Bob");
 
 export { useLocalStorage };

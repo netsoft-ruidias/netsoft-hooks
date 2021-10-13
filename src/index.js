@@ -2,6 +2,7 @@ export * from "./useAcrValues";
 export * from "./useArray";
 export * from "./useBodyStyle";
 export * from "./useDarkMode";
+export * from "./useDebounce";
 export * from "./useEventListener";
 export * from "./useFavicon";
 export * from "./useFetch";

@@ -1,5 +1,10 @@
 import { useEffect } from "react";
 
+/**
+ * Add a custom style to the html's page body
+ * @example
+ *      const [styel] = useBodyStyle({backgroundColor: red});
+ */
 const useBodyStyle = (style) => {
     useEffect(() => {
         for (var key in style) {

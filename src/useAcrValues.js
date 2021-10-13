@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
 
+/**
+ * Get a key/value pair of acrValues from a queryString (see OpenIDConnect)
+ * @param {string} str the acrValues string
+ * @returns {array} key/value pair of acr Values
+ */
 const useAcrValues = (str) => {
     const [acrValues, setAcrValues] = useState({});
 

@@ -1,6 +1,19 @@
 import { useState, useEffect } from "react";
 
 // source: https://usehooks.com/useMedia/
+
+/**
+ * Use media queries in your component logic.
+ * @example
+ *      const columnCount = useMedia(
+ *           // Media queries
+ *           ["(min-width: 1500px)", "(min-width: 1000px)", "(min-width: 600px)"],
+ *           // Column counts (relates to above media queries by array index)
+ *           [5, 4, 3],
+ *           // Default column count
+ *           2
+ *      );
+ */
 const useMediaQuery = (queries, values, defaultValue) => {
     // Array containing a media query list for each query
     const mediaQueryLists = queries.map((q) => window.matchMedia(q));

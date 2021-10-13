@@ -2,6 +2,11 @@ import { useState, useEffect } from "react";
 import { createHash, randomBytes } from "crypto";
 import { encode } from "base64url";
 
+/**
+ * PKCE (RFC 7636) is an extension to the Authorization Code flow to prevent several attacks and to be able to securely perform the OAuth exchange from public clients.
+ * @example
+ *      const [verifier, challenge] = usePkce();
+ */
 const usePkce = (method = "S256") => {
     const [codeVerifier, setCodeVerifier] = useState("");
     const [codeChallenge, setCodeChallenge] = useState("");

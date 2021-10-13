@@ -1,17 +1,34 @@
 # Netsoft's react hooks
 
-Better description coming soon... stay tuned
+![minzipped size](https://img.shields.io/bundlephobia/minzip/@netsoft/hooks?style=for-the-badge)
+![downloads](https://img.shields.io/npm/dt/@netsoft/hooks?style=for-the-badge)
+![license](https://img.shields.io/npm/l/@netsoft/hooks?style=for-the-badge)
+
+![open issues](https://img.shields.io/github/issues-raw/netsoft-ruidias/netsoft-hooks?style=for-the-badge)
+![pull requests](https://img.shields.io/github/issues-pr/netsoft-ruidias/netsoft-hooks?style=for-the-badge)
+![contributors](https://img.shields.io/github/contributors/netsoft-ruidias/netsoft-hooks?style=for-the-badge)
+![last commit](https://img.shields.io/github/last-commit/netsoft-ruidias/netsoft-hooks?style=for-the-badge)
+
+![stable version](https://img.shields.io/npm/v/@netsoft/hooks?label=Stable%20Version&style=for-the-badge)
+![react dependency version](https://img.shields.io/npm/dependency-version/@netsoft/hooks/react?style=for-the-badge)
+![base64url dependency version](https://img.shields.io/npm/dependency-version/@netsoft/hooks/base64url?style=for-the-badge)
+![query-string dependency version](https://img.shields.io/npm/dependency-version/@netsoft/hooks/query-string?style=for-the-badge)
 
 ## Hooks
 
+Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+
+This repo contains a collection of useful hooks that can be used to speed up front-end application development.
+
 ### useAcrValues
 
-Retrieve ACR Values form text to object
+Parse a text string with ACR values into an object.
 
 usage:
 
 ```JavaScript
     const [acrValues] = useAcrValues("acrValues=key1:value1 key2:value2");
+    // acrValues = { key1: value1, key2: value2 }
 ```
 
 ### useArray
