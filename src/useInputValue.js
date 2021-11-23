@@ -6,8 +6,10 @@ import { useState } from "react";
 /**
  * Returns an object containing the value and an onChange function to update that value.
  * @example
- *      const Email = useInputValue("");
- *      toggleLoading()
+ *      const email = useInputValue("");
+ *      ...
+ *      <input type="text" placeholder="Email" {...email} />
+ *      ...
  * @returns {object} the value
  * @returns {function} the onChange function
  */
